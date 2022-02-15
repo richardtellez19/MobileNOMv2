@@ -1,0 +1,32 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="MainDBConnectionString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=|DataDirectory|\DB\MainDB.sdf;Max Database Size = 512;Password=mobilemetriks&lt;/ConnectionString&gt;
+  &lt;ProviderName&gt;Microsoft.SqlServerCe.Client.3.5&lt;/ProviderName&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=|DataDirectory|\DB\MainDB.sdf;Max Database Size = 512;Password=mobilemetriks</Value>
+    </Setting>
+    <Setting Name="MobileNOMv2_com_sedeb2b_cfdiws_CFDiService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://cfdiws.sedeb2b.com/EdiwinWS/services/CFDi</Value>
+    </Setting>
+    <Setting Name="MobileNOMv2_Licencias_Service1" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://66.226.75.13/Licencias/Service1.asmx</Value>
+    </Setting>
+    <Setting Name="MobileNOMv2_Finkok_StampSOAP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://facturacion.finkok.com/servicios/soap/stamp</Value>
+    </Setting>
+    <Setting Name="MobileNOMv2_DemoFinkok_StampSOAP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://demo-facturacion.finkok.com/servicios/soap/stamp</Value>
+    </Setting>
+    <Setting Name="MobileNOMv2_CancelacionFinkok_CancelSOAP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://facturacion.finkok.com/servicios/soap/cancel</Value>
+    </Setting>
+    <Setting Name="MobileNOMv2_CancelacionDemoFinkok_CancelSOAP" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://demo-facturacion.finkok.com/servicios/soap/cancel</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
