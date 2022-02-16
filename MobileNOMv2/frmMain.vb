@@ -207,6 +207,8 @@ Public Class frmMain
                     Doc.Save(SaveFileDialog.FileName)
                 End If
             Case "Cancelar"
+                ServicePointManager.Expect100Continue = True
+                ServicePointManager.SecurityProtocol = DirectCast(3072, SecurityProtocolType)
                 If MsgBox("¿Seguro que desea cancelar el comprobante: " & Me.MainDBDataSet.Series.Select("SerieId=" & Comprobante("SerieId"))(0).Item("Serie") & Comprobante("Folio"), MsgBoxStyle.Question + MsgBoxStyle.YesNo, "Cancelar CFDi") = MsgBoxResult.No Then Exit Sub
                 If Comprobante("StatusCompId") = 2 Then
                     Dim WS
@@ -267,7 +269,7 @@ Public Class frmMain
                                     End Try
                                     MsgBox("El comprobante ha sido cancelado.", MsgBoxStyle.Information, "Cancelar CFDi")
                                 Else
-                                    MsgBox(responseStatus.EstatusCancelacion, MsgBoxStyle.Information, "Cancelar CFDi")
+                                    MsgBox(responseStatus.Estado, MsgBoxStyle.Information, "Cancelar CFDi")
                                 End If
                             Catch ex As Exception
                                 MsgBox(ex.ToString, MsgBoxStyle.Information, "Cancelar CFDi")
